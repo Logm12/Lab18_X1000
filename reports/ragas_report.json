@@ -1,0 +1,254 @@
+{
+  "aggregate": {
+    "faithfulness": 0.9017543859649123,
+    "answer_relevancy": 0.49757973833213304,
+    "context_precision": 0.9912280701258772,
+    "context_recall": 0.9210526315789473
+  },
+  "num_questions": 19,
+  "failures": [
+    {
+      "question": "Nhân viên có phải đăng ký nghỉ lễ không?",
+      "worst_metric": "faithfulness",
+      "score": 0.0,
+      "diagnosis": "LLM hallucinating",
+      "suggested_fix": "Tighten prompt, lower temperature"
+    },
+    {
+      "question": "Nhân viên có làm việc từ xa thì có được nghỉ phép không?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.0,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Nhân viên có thâm niên 7 năm sẽ được hưởng bao nhiêu ngày nghỉ phép năm?",
+      "worst_metric": "faithfulness",
+      "score": 0.3333333333333333,
+      "diagnosis": "LLM hallucinating",
+      "suggested_fix": "Tighten prompt, lower temperature"
+    },
+    {
+      "question": "Nhân viên thử việc có được hưởng bảo hiểm không?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.0,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Ai sẽ quyết định việc nhân viên có thể làm việc từ xa hay không?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.0,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Có bao nhiêu ngày nghỉ phép năm cho nhân viên có thâm niên 10 năm?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.5462895033796584,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Nhân viên có được hỗ trợ chi phí ăn trưa không?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.5698411206257853,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Khi nào nhân viên có thể đăng ký nghỉ phép?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.435284243291987,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Nhân viên thử việc có được nghỉ phép năm không?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.4774042832034394,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Nhân viên chính thức được hưởng bao nhiêu ngày nghỉ phép năm?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.49333203230257383,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    }
+  ],
+  "details": [
+    {
+      "question": "Nhân viên chính thức được hưởng bao nhiêu ngày nghỉ phép năm?",
+      "answer": "Nhân viên chính thức được hưởng 12 ngày nghỉ phép năm cho mỗi năm làm việc đầy đủ.",
+      "ground_truth": "Nhân viên chính thức được hưởng 12 ngày nghỉ phép năm cho mỗi năm làm việc đầy đủ.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.49333203230257383,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhân viên có thâm niên 7 năm sẽ được hưởng bao nhiêu ngày nghỉ phép năm?",
+      "answer": "Nhân viên có thâm niên 7 năm sẽ được hưởng 12 ngày nghỉ phép năm cộng thêm 1 ngày nghỉ phép cho mỗi 5 năm thâm niên. Do đó, tổng cộng sẽ là 12 + 1 = 13 ngày nghỉ phép năm.",
+      "ground_truth": "Nhân viên có thâm niên từ 5 năm trở lên sẽ được cộng thêm 1 ngày nghỉ phép, do đó tổng cộng sẽ là 13 ngày.",
+      "faithfulness": 0.3333333333333333,
+      "answer_relevancy": 0.5441951198125257,
+      "context_precision": 0.99999999995,
+      "context_recall": 0.5
+    },
+    {
+      "question": "Nhân viên thử việc có được nghỉ phép năm không?",
+      "answer": "Nhân viên thử việc không được nghỉ phép năm.",
+      "ground_truth": "Nhân viên thử việc không được nghỉ phép năm nhưng được hưởng các ngày nghỉ lễ theo quy định.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.4774042832034394,
+      "context_precision": 0.9999999999666667,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Việc đăng ký nghỉ phép cần thực hiện trước bao lâu?",
+      "answer": "Việc đăng ký nghỉ phép phải được thực hiện qua hệ thống HR Portal trước ít nhất 3 ngày làm việc.",
+      "ground_truth": "Việc đăng ký nghỉ phép phải được thực hiện qua hệ thống HR Portal trước ít nhất 3 ngày làm việc.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7947678390081404,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Công ty cho phép nhân viên làm việc từ xa bao nhiêu ngày mỗi tuần?",
+      "answer": "Công ty cho phép nhân viên làm việc từ xa tối đa 2 ngày mỗi tuần.",
+      "ground_truth": "Công ty cho phép nhân viên làm việc từ xa tối đa 2 ngày mỗi tuần.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5654319236189057,
+      "context_precision": 0.9999999999,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Ai sẽ quyết định việc nhân viên có thể làm việc từ xa hay không?",
+      "answer": "Quản lý trực tiếp sẽ quyết định việc nhân viên có thể làm việc từ xa hay không.",
+      "ground_truth": "Việc làm việc từ xa phụ thuộc vào tính chất công việc và sự đồng ý của quản lý trực tiếp.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.9999999999666667,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhân viên có cần tự chi trả chi phí điện nước và internet khi làm việc từ xa không?",
+      "answer": "Có, nhân viên phải tự chi trả chi phí điện nước và internet khi làm việc từ xa.",
+      "ground_truth": "Chi phí điện nước và internet tại nhà do nhân viên tự chi trả.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.9746624952484623,
+      "context_precision": 0.9999999999666667,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhân viên được công ty cung cấp thiết bị gì khi làm việc từ xa?",
+      "answer": "Nhân viên được công ty cung cấp laptop khi làm việc từ xa.",
+      "ground_truth": "Thiết bị làm việc (laptop) do công ty cung cấp phải được bảo quản cẩn thận.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6159565644011352,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Tất cả nhân viên chính thức có được đóng bảo hiểm xã hội không?",
+      "answer": "Có, tất cả nhân viên chính thức được đóng Bảo hiểm xã hội.",
+      "ground_truth": "Tất cả nhân viên chính thức được đóng Bảo hiểm xã hội, Bảo hiểm y tế và Bảo hiểm thất nghiệp theo mức lương thực tế.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.519897767854338,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Gói bảo hiểm sức khỏe cao cấp PVI được cung cấp cho những ai?",
+      "answer": "Gói bảo hiểm sức khỏe cao cấp PVI được cung cấp cho nhân viên và người thân của họ sau 2 năm công tác.",
+      "ground_truth": "Công ty cung cấp gói bảo hiểm sức khỏe cao cấp (PVI) cho nhân viên và người thân sau 2 năm công tác.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6861841264270779,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhân viên sẽ được thưởng tháng lương thứ 13 khi nào?",
+      "answer": "Nhân viên sẽ được thưởng tháng lương thứ 13 vào dịp Tết Nguyên Đán nếu làm việc đủ 12 tháng.",
+      "ground_truth": "Thưởng tháng lương thứ 13 được chi trả vào dịp Tết Nguyên Đán cho nhân viên làm việc đủ 12 tháng.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.6878210269146894,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhân viên có được hỗ trợ chi phí ăn trưa không?",
+      "answer": "Có, nhân viên được hỗ trợ chi phí ăn trưa hàng tháng.",
+      "ground_truth": "Nhân viên được hỗ trợ chi phí ăn trưa và gửi xe hàng tháng.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.5698411206257853,
+      "context_precision": 0.8333333332916666,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Có phải nhân viên làm việc từ xa phải luôn sẵn sàng phản hồi trong giờ làm việc không?",
+      "answer": "Có, nhân viên làm việc từ xa phải luôn sẵn sàng phản hồi tin nhắn/cuộc gọi trong giờ làm việc.",
+      "ground_truth": "Nhân viên phải đảm bảo có kết nối internet ổn định và luôn sẵn sàng phản hồi tin nhắn/cuộc gọi trong giờ làm việc.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7678784387564955,
+      "context_precision": 0.9999999999666667,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Có điều kiện nào để nhân viên được cộng thêm ngày nghỉ phép không?",
+      "answer": "Có, nhân viên có thâm niên từ 5 năm trở lên sẽ được cộng thêm 1 ngày nghỉ phép cho mỗi 5 năm thâm niên.",
+      "ground_truth": "Nhân viên có thâm niên từ 5 năm trở lên, cứ mỗi 5 năm thâm niên sẽ được cộng thêm 1 ngày nghỉ phép.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.7750685434653142,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Có bao nhiêu ngày nghỉ phép năm cho nhân viên có thâm niên 10 năm?",
+      "answer": "Nhân viên có thâm niên 10 năm sẽ được hưởng 12 ngày nghỉ phép năm cộng thêm 2 ngày nghỉ phép (1 ngày cho mỗi 5 năm thâm niên). Tổng cộng là 12 + 2 = 14 ngày nghỉ phép năm.",
+      "ground_truth": "Nhân viên có thâm niên 10 năm sẽ được 12 + 2 = 14 ngày nghỉ phép năm.",
+      "faithfulness": 0.8,
+      "answer_relevancy": 0.5462895033796584,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhân viên có phải đăng ký nghỉ lễ không?",
+      "answer": "Không tìm thấy thông tin.",
+      "ground_truth": "Nhân viên thử việc không phải đăng ký nghỉ phép năm nhưng được hưởng các ngày nghỉ lễ theo quy định.",
+      "faithfulness": 0.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.9999999999666667,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Khi nào nhân viên có thể đăng ký nghỉ phép?",
+      "answer": "Nhân viên có thể đăng ký nghỉ phép qua hệ thống HR Portal trước ít nhất 3 ngày làm việc.",
+      "ground_truth": "Nhân viên có thể đăng ký nghỉ phép khi thực hiện qua hệ thống HR Portal trước ít nhất 3 ngày làm việc.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.435284243291987,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0
+    },
+    {
+      "question": "Nhân viên có làm việc từ xa thì có được nghỉ phép không?",
+      "answer": "Không tìm thấy thông tin.",
+      "ground_truth": "Nhân viên làm việc từ xa vẫn được hưởng các ngày nghỉ phép như quy định.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.9999999999666667,
+      "context_recall": 0.0
+    },
+    {
+      "question": "Nhân viên thử việc có được hưởng bảo hiểm không?",
+      "answer": "Không tìm thấy thông tin.",
+      "ground_truth": "Không có thông tin cụ thể trong quy định, nhưng thông thường nhân viên thử việc không được hưởng đầy đủ bảo hiểm như nhân viên chính thức.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.0,
+      "context_precision": 0.99999999995,
+      "context_recall": 1.0
+    }
+  ]
+}
